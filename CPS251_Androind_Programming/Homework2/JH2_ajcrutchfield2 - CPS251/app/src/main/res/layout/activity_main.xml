@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:stretchColumns="0,1,2,3,4">
+    <TableRow >
+        <TextView
+            android:id="@+id/display"
+            android:text=""
+            android:layout_span="5"
+            android:autoText="false" />
+    </TableRow>
+
+    <TableRow >
+        <Button
+            android:id="@+id/b7"
+            android:text="@string/seven" />
+        <Button
+            android:id="@+id/b8"
+            android:text="@string/eight" />
+        <Button
+            android:id="@+id/b9"
+            android:text="@string/nine" />
+        <Button
+            android:id="@+id/div"
+            android:text="@string/divide" />
+
+    </TableRow>
+    <TableRow >
+        <Button
+            android:id="@+id/b4"
+            android:text="@string/four" />
+        <Button
+            android:id="@+id/b5"
+            android:text="@string/five" />
+        <Button
+            android:id="@+id/b6"
+            android:text="@string/six" />
+        <Button
+            android:id="@+id/mult"
+            android:text="@string/multiply" />
+    </TableRow>
+
+    <TableRow >
+        <Button
+            android:id="@+id/b1"
+            android:text="@string/one"   />
+        <Button
+            android:id="@+id/b2"
+            android:text="@string/two" />
+        <Button
+            android:id="@+id/b3"
+            android:text="@string/three"    />
+        <Button
+            android:id="@+id/minus"
+            android:text="@string/subtract"   />
+    </TableRow>
+
+    <TableRow >
+        <Button
+            android:id="@+id/b0"
+            android:text="@string/zeros"   />
+        <Button
+            android:id="@+id/backSpace"
+            android:text="@string/backspace"  />
+
+        <Button
+            android:id="@+id/clear"
+            android:text="@string/clear"  />
+        <Button
+            android:id="@+id/plus"
+            android:text="@string/add"     />
+    </TableRow>
+    <TableRow >
+        <Button
+            android:id="@+id/equals"
+            android:text="@string/equals"
+            android:layout_span="4"    />
+    </TableRow>
+
+
+</TableLayout>

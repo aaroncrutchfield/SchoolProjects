@@ -1,0 +1,196 @@
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.72
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Sep 14 2016 12:12:26 UTC
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.72.0
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program Files\Java\jdk1.8.0_101\jre
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_101-b13
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|DESKTOP-MLD4RTA
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\conf\logging.properties
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\endorsed
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72
+Oct 10, 2016 7:53:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\temp
+Oct 10, 2016 7:53:49 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Loaded APR based Apache Tomcat Native library 1.2.8 using APR version 1.5.2.
+Oct 10, 2016 7:53:49 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Oct 10, 2016 7:53:50 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized (OpenSSL 1.0.2h  3 May 2016)
+Oct 10, 2016 7:53:51 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-8090"]
+Oct 10, 2016 7:53:51 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Oct 10, 2016 7:53:51 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2006 ms
+Oct 10, 2016 7:53:51 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Oct 10, 2016 7:53:51 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.72
+Oct 10, 2016 7:53:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\docs
+Oct 10, 2016 7:53:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\docs has finished in 437 ms
+Oct 10, 2016 7:53:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\examples
+Oct 10, 2016 7:53:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\examples has finished in 350 ms
+Oct 10, 2016 7:53:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\host-manager
+Oct 10, 2016 7:53:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\host-manager has finished in 148 ms
+Oct 10, 2016 7:53:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\manager
+Oct 10, 2016 7:53:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\manager has finished in 78 ms
+Oct 10, 2016 7:53:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\ROOT
+Oct 10, 2016 7:53:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\ROOT has finished in 78 ms
+Oct 10, 2016 7:53:52 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-8090"]
+Oct 10, 2016 7:53:52 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Oct 10, 2016 7:53:52 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1473 ms
+Oct 10, 2016 8:02:17 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Oct 10, 2016 8:02:17 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-8090"]
+Oct 10, 2016 8:02:17 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Oct 10, 2016 8:02:17 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Oct 10, 2016 8:02:17 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-8090"]
+Oct 10, 2016 8:02:17 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Oct 10, 2016 8:02:17 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-8090"]
+Oct 10, 2016 8:02:17 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.72
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Sep 14 2016 12:12:26 UTC
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.72.0
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program Files\Java\jdk1.8.0_101\jre
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_101-b13
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|DESKTOP-MLD4RTA
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\conf\logging.properties
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\endorsed
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72
+Oct 10, 2016 8:08:59 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\temp
+Oct 10, 2016 8:08:59 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Loaded APR based Apache Tomcat Native library 1.2.8 using APR version 1.5.2.
+Oct 10, 2016 8:08:59 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Oct 10, 2016 8:09:00 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized (OpenSSL 1.0.2h  3 May 2016)
+Oct 10, 2016 8:09:00 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-8090"]
+Oct 10, 2016 8:09:00 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Oct 10, 2016 8:09:00 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1168 ms
+Oct 10, 2016 8:09:00 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Oct 10, 2016 8:09:00 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.72
+Oct 10, 2016 8:09:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\docs
+Oct 10, 2016 8:09:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\docs has finished in 359 ms
+Oct 10, 2016 8:09:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\examples
+Oct 10, 2016 8:09:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\examples has finished in 375 ms
+Oct 10, 2016 8:09:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\host-manager
+Oct 10, 2016 8:09:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\host-manager has finished in 125 ms
+Oct 10, 2016 8:09:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\manager
+Oct 10, 2016 8:09:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\manager has finished in 94 ms
+Oct 10, 2016 8:09:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\ROOT
+Oct 10, 2016 8:09:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\ROOT has finished in 31 ms
+Oct 10, 2016 8:09:01 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-8090"]
+Oct 10, 2016 8:09:01 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Oct 10, 2016 8:09:01 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1300 ms
+Oct 10, 2016 8:15:05 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\JSPConvertedFromServlets.war
+Oct 10, 2016 8:15:05 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\ioutd\OneDrive\Class Material\Current\CPS278 (Java Server Programming)\apache-tomcat-7.0.72\webapps\JSPConvertedFromServlets.war has finished in 104 ms
+Oct 10, 2016 8:52:26 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Oct 10, 2016 8:52:26 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-8090"]
+Oct 10, 2016 8:52:26 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Oct 10, 2016 8:52:26 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Oct 10, 2016 8:52:26 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-8090"]
+Oct 10, 2016 8:52:26 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Oct 10, 2016 8:52:26 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-8090"]
+Oct 10, 2016 8:52:26 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]

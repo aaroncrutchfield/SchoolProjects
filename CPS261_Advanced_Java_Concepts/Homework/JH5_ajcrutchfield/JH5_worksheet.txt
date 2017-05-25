@@ -1,0 +1,53 @@
+JH5 worksheet
+***************** Class Participation    *****************
+Your Class Participation Entry for JH5:
+Discussion board containing your entry: JH5 Sharing  
+Date of your Entry: 11/2/2015
+Subject Line of your entry: Networking Better Server Model
+***************** file_server    *****************
+Run your program and make a JING video where you demo your program. I would like audio on this. 
+Save the JING on the JING web site so you will have a URL of your video. Place the URL to your JING 
+below:
+http://screencast.com/t/ka0LDWHaLK8
+
+***************** plans for your networked game    *****************
+There is no code for this section at this stage of planning because I am just looking for an outline of your plans.
+ 
+If you want to submit files other than this text document (i.e. Word, PDF, etc.), list the names of 
+the files you will be submitting and 
+DON'T FORGET TO ADD THEM AS ADDITIONAL ATTACHMENTS WHEN YOU SUBMIT THIS ASSIGNMENT!!!!!!!!!!!!!!!! 
+Otherwise, Include your Overall Description of what you are doing below:
+
+**Checkers/Chess game**
+
+Start
+	-Ask for game mode
+	-Ask for player name
+	-Assign player color
+
+Movement
+	-Chess
+		*Pieces can't move to a space that already belongs to a  piece of the same color
+		*King - can move one space in any direction. If the king is in danger, he must move to a space where he won't be anymore
+		*Queen - can move any number of spaces in any direction
+		*Rook - can move any number of spaces vertically or horizontally
+		*Bishop - can move any number of spaces diagonally
+		*Knight - can move vertically 2 spaces then over horizontally 1, or horizontally 2 spaces then vertically 1
+		*Pawn - can move 2 spaces forward on it's first move. Otherwise only 1 space. Can capture only 1 space diagonally forward. 
+		         When a pawn reaches the opposite side of the board, it is promoted to a queen
+	-Checkers 
+		*Pieces can't move to a space that already belongs to a  piece of the same color
+		*Pieces can move diagonally 1 space forward
+		*Pieces must take ALL jumps available
+		*Once crowned, pieces can move diagonally 1 space backwards as well
+		
+Game Over
+	-In Checkers, when all of a players pieces are out of play, they lose
+	-In Chess, when a King is captured, that player loses
+
+Additional Features
+	-When a piece is captured, it will appear the "captured" zone on the screen
+	-Option menu to start new game or switch game mode
+	-Keep score of number of wins for each player
+	-Status line for who's turn it is
+

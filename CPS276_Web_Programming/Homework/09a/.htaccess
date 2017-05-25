@@ -1,0 +1,15 @@
+Options All
+RewriteEngine on
+#
+# Set your RewriteBase to your project directory
+#
+RewriteBase /ajcrutchfield/09a/
+#
+#
+RewriteRule ^index.php(.*)$ index.php$1 [QSA,L]
+RewriteCond %{REQUEST_URI} !^.*resources/.*
+RewriteRule ^(.*)$ index.php?cmd=$1 [QSA,L]
+
+#special file that is used by apached
+#allows us to use te rewrite url function
+#we won't call php files directly on the website

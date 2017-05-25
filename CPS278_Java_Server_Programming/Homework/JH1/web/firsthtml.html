@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tesla</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Tesla Models</h1>
+        <table border="1">
+            <tr>
+                <td></td>
+                <th>Model 3</th>
+                <th>Model S</th>
+                <th>Model X</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td><img src="model3.jpg" width="270" height="180"></td>
+                <td><img src="models.jpg" width="270" height="180"></td>
+                <td><img src="modelx.jpg" width="270" height="180"></td>
+            </tr>
+            <tr>
+                <th>Range</th>
+                <td>215 miles</td>
+                <td>268 miles</td>
+                <td>250 miles</td>
+            </tr>
+            <tr>
+                <th>0-60mph</th>
+                <td>6 secs</td>
+                <td>3.1 secs</td>
+                <td>3.8 secs</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>$35,000</td>
+                <td>$130,000</td>
+                <td>$130,000</td>
+            </tr>
+        </table>
+        <br><br><br>
+        <h2>Order Information</h2>
+        <form action="doit">
+            Name<br>
+            <input type="text" name="name" /> <br><br>
+            
+            Phone Number<br>
+            <input type="number" name="phoneNumber" /> <br><br>
+            
+            Address<br>
+            <textarea name="address">Enter address...</textarea><br>
+            <input type="checkbox" name="deliver" value="yes"/> Deliver to me<br><br>
+            
+            Select Vehicle<br>
+            <input type="radio" name="vehicle" value="model3" checked/>Model 3<br>
+            <input type="radio" name="vehicle" value="models"/>Model S<br>
+            <input type="radio" name="vehicle" value="modelx"/>Model X<br><br>
+            
+            <input type="submit" name="submitted" value="Submit Info" />
+        </form>
+        
+    </body>
+</html>

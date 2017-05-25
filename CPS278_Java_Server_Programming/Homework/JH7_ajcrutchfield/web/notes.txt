@@ -1,0 +1,9 @@
+TODO
+-Check for valid count
+-Check for valid partNumber input
+-Check for valid location input
+
+-if all data is valid, insert data in DB
+
+http://localhost:8084/JH7_ajcrutchfield/PartServlet?partNumber=308222&count=8%4030&location=F12&action=Submit
+

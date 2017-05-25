@@ -1,0 +1,160 @@
+package net.wcc.ajcrutchfield.jh6_ajcrutchfield_webdownloader;
+
+import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnCancelListener;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnKeyListener;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.Scanner;
+// Files that you can download:
+// http://russet.wccnet.edu/~chasselb/boys_names.txt
+// http://russet.wccnet.edu/~chasselb/girls_names.txt
+// http://earthquake.usgs.gov/eqcenter/catalogs/1day-M2.5.xml
+// http://wccnet.edu
+// http://yahoo.com
+
+
+
+public class MainActivity extends Activity {
+    private static final String MY_NAME_LIST = "myNameList";
+    EditText myUrl;
+    TextView myOutput;
+    Intent receivedIntent;
+
+    ArrayList<String> nameList = new ArrayList<>();
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        myUrl = (EditText)findViewById(R.id.myurl);
+        myOutput = (TextView)findViewById(R.id.myoutput);
+        myUrl.setOnKeyListener(new MyEditTextHandler());
+
+        receivedIntent = getIntent();
+    }
+    // ************* Start of Inner class to handle the EditText box  *********
+    class MyEditTextHandler implements OnKeyListener
+    {
+        public boolean onKey(View v, int keyCode, KeyEvent event) {
+            if (event.getAction() == KeyEvent.ACTION_DOWN)
+                if (keyCode == KeyEvent.KEYCODE_ENTER)
+                {
+                    String url = myUrl.getText().toString();
+                    Log.d("Mine", "loadFile "+url);
+                    MyAsync myAsync = new MyAsync();
+                    myAsync.execute(url);
+                    return true;
+                }
+            return false;
+        }
+    }
+    // ************* End of Inner class
+    private String loadFile(String urlStr)
+    {
+        StringBuilder sb= new StringBuilder();
+        URL url;
+        URLConnection connection;
+        HttpURLConnection httpConnection=null;
+        Scanner scan=null;
+        try {
+            url = new URL(urlStr);
+            connection = url.openConnection();
+            httpConnection = (HttpURLConnection)connection;
+            int responseCode = httpConnection.getResponseCode();
+            boolean good = false;
+            if (responseCode == HttpURLConnection.HTTP_OK)
+                good = true;
+            sb.append("http return code="+responseCode +" good="+good +"\n");
+            Log.d("Mine", "Good HttpURLConnection");
+            InputStream in = httpConnection.getInputStream();
+            if (nameList != null)
+                nameList.clear();
+
+            scan = new Scanner(in);
+            while(scan.hasNextLine())
+            {
+                String str = scan.nextLine();
+
+                //remove numbers
+                str = str.replaceAll("[^A-Za-z]","");
+                sb.append(str +"\n");
+                nameList.add(str);
+            }
+            scan.close();
+        }
+        catch (MalformedURLException e) {
+            Log.d("Mine", "MalformedURLException "+e);
+        } catch (IOException e) {
+            Log.d("Mine", "IOException "+e);
+        }
+        finally {
+            if (httpConnection != null)
+                httpConnection.disconnect();
+        }
+        return sb.toString();
+    }
+    // ******* INNER CLASS
+    class MyAsync extends AsyncTask<String, Integer, String>{
+        ProgressDialog pleaseWaitDialog=null;
+        String downloadMsg="Lines=";
+        // This code is to provide an animated dialog showing progress
+        // Think of this code executing on the Gui thread
+        protected void onPreExecute() {
+            pleaseWaitDialog = ProgressDialog.show(MainActivity.this,
+                    "Downloading file(back arrow to cancel)",
+                    downloadMsg, true, true);
+            pleaseWaitDialog.setOnCancelListener(new OnCancelListener() {
+                public void onCancel(DialogInterface dialog) {
+                    Log.d("Mine", "onCancel");
+                    cancel(true);
+                }
+            });
+        }
+        // This code executes in the created Thread
+        protected String doInBackground(String... parm) {
+            String url=parm[0];
+            String contents =loadFile(url);
+            Log.d("Mine"," Done");
+            return contents;
+        }
+        //This code executes in the GUI Thread
+        protected void onProgressUpdate(Integer... progress) {
+            Log.d("Mine","onProgressUpdate "+ progress[0]);
+            if (pleaseWaitDialog != null)
+                pleaseWaitDialog.setMessage(downloadMsg+progress[0]);
+        }
+        //This code executes in theGUI Thread
+        protected void onPostExecute(String contents) {
+            Log.d("Mine","onPostExecute");
+            myOutput.setText(contents);
+            if (pleaseWaitDialog != null)
+                pleaseWaitDialog.dismiss();
+        }
+    }// end of MyAsync Inner class
+
+    public void returnNameList(View view) {
+        Log.d("Mine", "sending outData");
+        Intent outData = new Intent();
+        outData.putStringArrayListExtra(MY_NAME_LIST, nameList);
+        setResult(Activity.RESULT_OK, outData);
+        finish();
+    }
+}
+

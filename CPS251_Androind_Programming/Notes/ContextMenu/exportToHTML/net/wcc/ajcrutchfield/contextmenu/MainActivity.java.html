@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>MainActivity.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { }
+.s2 { color: rgb(204,120,50); }
+.s3 { color: rgb(0,0,255); }
+.s4 { color: rgb(0,128,0); font-weight: bold; }
+.s5 { color: rgb(128,128,128); font-style: italic; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+MainActivity.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">package </span><span class="s1">net.wcc.ajcrutchfield.contextmenu</span><span class="s2">;</span><span class="s1"> 
+ 
+</span><span class="s0">import </span><span class="s1">android.app.Activity</span><span class="s2">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.os.Bundle</span><span class="s2">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.util.Log</span><span class="s2">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.view.ContextMenu</span><span class="s2">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.view.Menu</span><span class="s2">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.view.MenuItem</span><span class="s2">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.view.View</span><span class="s2">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.view.View.OnClickListener</span><span class="s2">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.widget.TextView</span><span class="s2">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.widget.Toast</span><span class="s2">;</span><span class="s1"> 
+ 
+</span><span class="s0">public class </span><span class="s1">MainActivity </span><span class="s0">extends </span><span class="s1">Activity </span><span class="s0">implements </span><span class="s1">OnClickListener{ 
+ 
+    TextView state</span><span class="s2">, </span><span class="s1">capital</span><span class="s2">;</span><span class="s1"> 
+    </span><span class="s0">static final int </span><span class="s1">STATE_ID=</span><span class="s3">0</span><span class="s2">;</span><span class="s1"> 
+    </span><span class="s0">static final int </span><span class="s1">CAPITAL_ID=</span><span class="s3">100</span><span class="s2">;</span><span class="s1"> 
+    String[] stateNames={</span><span class="s4">&quot;Michigan&quot;</span><span class="s2">, </span><span class="s4">&quot;Ohio&quot;</span><span class="s2">, </span><span class="s4">&quot;California&quot;</span><span class="s2">, </span><span class="s4">&quot;Wisconsin&quot;</span><span class="s1">}</span><span class="s2">;</span><span class="s1"> 
+    String[] capitalNames={</span><span class="s4">&quot;Lansing&quot;</span><span class="s2">, </span><span class="s4">&quot;Columbus&quot;</span><span class="s2">, </span><span class="s4">&quot;Sacramento&quot;</span><span class="s2">, </span><span class="s4">&quot;Madison&quot;</span><span class="s1">}</span><span class="s2">;</span><span class="s1"> 
+ 
+    </span><span class="s5">/** Called when the activity is first created. */</span><span class="s1"> 
+    @Override 
+    </span><span class="s0">public void </span><span class="s1">onCreate(Bundle savedInstanceState) { 
+        </span><span class="s0">super</span><span class="s1">.onCreate(savedInstanceState)</span><span class="s2">;</span><span class="s1"> 
+        setContentView(R.layout.activity_main)</span><span class="s2">;</span><span class="s1"> 
+ 
+        state = (TextView)findViewById(R.id.state)</span><span class="s2">;</span><span class="s1"> 
+        capital = (TextView)findViewById(R.id.capital)</span><span class="s2">;</span><span class="s1"> 
+        state.setOnClickListener(</span><span class="s0">this</span><span class="s1">)</span><span class="s2">;</span><span class="s1"> 
+        capital.setOnClickListener(</span><span class="s0">this</span><span class="s1">)</span><span class="s2">;</span><span class="s1"> 
+ 
+ 
+        registerForContextMenu(state)</span><span class="s2">;</span><span class="s1"> 
+        registerForContextMenu(capital)</span><span class="s2">;</span><span class="s1"> 
+ 
+ 
+    } 
+    </span><span class="s5">// Nothing new in the OnClick routine except to point out that</span><span class="s1"> 
+</span><span class="s5">// anything derived from View class (Even TextView) can work </span><span class="s1"> 
+</span><span class="s5">// with the OnClickListener Interface.</span><span class="s1"> 
+    @Override 
+    </span><span class="s0">public void </span><span class="s1">onClick(View v) { 
+        Toast toast=</span><span class="s0">null</span><span class="s2">;</span><span class="s1"> 
+        </span><span class="s0">switch</span><span class="s1">(v.getId()) 
+        { 
+            </span><span class="s0">case </span><span class="s1">R.id.state: 
+                toast = Toast.makeText(</span><span class="s0">this </span><span class="s5">/*Needs a Context*/</span><span class="s2">, </span><span class="s1">state.getText()</span><span class="s2">, </span><span class="s1">Toast.LENGTH_SHORT)</span><span class="s2">;</span><span class="s1"> 
+                </span><span class="s0">break</span><span class="s2">;</span><span class="s1"> 
+            </span><span class="s0">case </span><span class="s1">R.id.capital: 
+                toast = Toast.makeText(</span><span class="s0">this </span><span class="s5">/*Needs a Context*/</span><span class="s2">, </span><span class="s1">capital.getText()</span><span class="s2">, </span><span class="s1">Toast.LENGTH_SHORT)</span><span class="s2">;</span><span class="s1"> 
+                </span><span class="s0">break</span><span class="s2">;</span><span class="s1"> 
+            </span><span class="s0">default</span><span class="s1">: 
+                toast = Toast.makeText(</span><span class="s0">this </span><span class="s5">/*Needs a Context*/</span><span class="s2">, </span><span class="s4">&quot;??????&quot;</span><span class="s2">, </span><span class="s1">Toast.LENGTH_SHORT)</span><span class="s2">;</span><span class="s1"> 
+                </span><span class="s0">break</span><span class="s2">;</span><span class="s1"> 
+        } 
+        toast.show()</span><span class="s2">;</span><span class="s1"> 
+    } 
+    </span><span class="s5">// Note that onlike onCreateOptionsMenu this call is made for every long press of the associated View.</span><span class="s1"> 
+    @Override 
+    </span><span class="s0">public void </span><span class="s1">onCreateContextMenu(ContextMenu menu</span><span class="s2">,</span><span class="s1"> 
+                                    View v</span><span class="s2">,</span><span class="s1"> 
+                                    ContextMenu.ContextMenuInfo menuInfo) { 
+        </span><span class="s0">super</span><span class="s1">.onCreateContextMenu(menu</span><span class="s2">, </span><span class="s1">v</span><span class="s2">, </span><span class="s1">menuInfo)</span><span class="s2">;</span><span class="s1"> 
+ 
+        Toast.makeText(</span><span class="s0">this</span><span class="s2">, </span><span class="s4">&quot;onCreateContextMenu&quot;</span><span class="s2">, </span><span class="s1">Toast.LENGTH_SHORT).show()</span><span class="s2">;</span><span class="s1"> 
+ 
+        </span><span class="s0">switch</span><span class="s1">(v.getId()) 
+        { 
+            </span><span class="s0">case </span><span class="s1">R.id.state: 
+                menu.setHeaderTitle(</span><span class="s4">&quot;Click on State to Add&quot;</span><span class="s1">)</span><span class="s2">;</span><span class="s1"> 
+                </span><span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">i=</span><span class="s3">0</span><span class="s2">; </span><span class="s1">i &lt; stateNames.length</span><span class="s2">; </span><span class="s1">i++) 
+                    menu.add(Menu.NONE</span><span class="s2">, </span><span class="s1">STATE_ID+i</span><span class="s2">, </span><span class="s1">Menu.NONE</span><span class="s2">, </span><span class="s1">stateNames[i])</span><span class="s2">;</span><span class="s1"> 
+                </span><span class="s0">break</span><span class="s2">;</span><span class="s1"> 
+            </span><span class="s0">case </span><span class="s1">R.id.capital: 
+                menu.setHeaderTitle(</span><span class="s4">&quot;Click on Capital to Add&quot;</span><span class="s1">)</span><span class="s2">;</span><span class="s1"> 
+                </span><span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">i=</span><span class="s3">0</span><span class="s2">; </span><span class="s1">i &lt; capitalNames.length</span><span class="s2">; </span><span class="s1">i++) 
+                    menu.add(Menu.NONE</span><span class="s2">, </span><span class="s1">CAPITAL_ID+i</span><span class="s2">, </span><span class="s1">Menu.NONE</span><span class="s2">, </span><span class="s1">capitalNames[i])</span><span class="s2">;</span><span class="s1"> 
+                </span><span class="s0">break</span><span class="s2">;</span><span class="s1"> 
+            </span><span class="s0">default</span><span class="s1">: 
+                Log.d(</span><span class="s4">&quot;Mine&quot;</span><span class="s2">, </span><span class="s4">&quot;???? onCreateContextMenu&quot;</span><span class="s1">)</span><span class="s2">; </span><span class="s5">// Shouldn't get here</span><span class="s1"> 
+                </span><span class="s0">break</span><span class="s2">;</span><span class="s1"> 
+        } 
+        Log.d(</span><span class="s4">&quot;Mine&quot;</span><span class="s2">, </span><span class="s4">&quot;onCreateContextMenu&quot;</span><span class="s1">)</span><span class="s2">;</span><span class="s1"> 
+    } 
+    @Override 
+    </span><span class="s0">public boolean </span><span class="s1">onContextItemSelected(MenuItem item) { 
+        </span><span class="s0">super</span><span class="s1">.onContextItemSelected(item)</span><span class="s2">;</span><span class="s1"> 
+        Toast.makeText(</span><span class="s0">this</span><span class="s2">, </span><span class="s4">&quot;onContextItemSelected&quot;</span><span class="s2">, </span><span class="s1">Toast.LENGTH_SHORT).show()</span><span class="s2">;</span><span class="s1"> 
+        </span><span class="s0">int </span><span class="s1">index = item.getItemId()</span><span class="s2">;</span><span class="s1"> 
+        String text = item.getTitle().toString()</span><span class="s2">;</span><span class="s1"> 
+        </span><span class="s0">if </span><span class="s1">(index &lt; CAPITAL_ID) 
+            state.setText(text)</span><span class="s2">;</span><span class="s1"> 
+        </span><span class="s0">else</span><span class="s1"> 
+            capital.setText(text)</span><span class="s2">;</span><span class="s1"> 
+ 
+        </span><span class="s0">return true</span><span class="s2">;</span><span class="s1"> 
+    } 
+} 
+</span></pre>
+</body>
+</html>

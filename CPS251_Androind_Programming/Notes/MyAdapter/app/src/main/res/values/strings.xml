@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyAdapter</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="spinner_prompt">Not sure why we need....</string>
+    <string name="action_settings">action_settings</string>
+</resources>

@@ -1,0 +1,41 @@
+---------------------------------
+Provider Lookup Application Notes
+---------------------------------
+
+(1a)As a user I can upload a text file for examination
+
+(1b)As a user I can select one of five papers from a drop down menu for examination
+
+(2)As a user I can analyze the document using Benford's Law.
+    -Data needed
+        -total number of numbers
+        -total numbers starting with each digit
+            -print this out
+        -the result number
+        -indicate whether the data set is "likely authentic" or "likely fake"
+
+
+Hints:
+-drop all numbers starting with '0'
+-discard signs (make all numbers positive)
+-use file_get_contents() to load a large string of text
+-use regular expressions to extract all numeric data
+-given a string or number $x, the notation $x{0} will extract the first
+character or digit.
+
+
+The process for scoring a number set for Benford’s Law is as follows:
+Given these variables:
+$total = the total number of numbers in the set
+$d1 = the number of numbers starting with the digit ‘1’
+$d2 = the number of numbers starting with the digit ‘2’
+$d3 = the number of numbers starting with the digit ‘3’
+$d4 ...
+$d5
+$d6
+$d7
+$d8
+$d9
+
+$result = ((($d1/0.301)+($d2/0.176)+($d3/0.125)+($d4/0.097)+($d5/0.079)
++($d6/0.067)+($d7/0.058)+($d8/0.051)+($d9/0.046))/9)/$total;

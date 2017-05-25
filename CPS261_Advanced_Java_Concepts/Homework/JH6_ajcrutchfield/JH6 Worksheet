@@ -1,0 +1,361 @@
+JH6 worksheet
+***************** Class Participation    *****************
+Your Class Participation Entry for JH6:
+Discussion board containing your entry: JH6 Sharing
+Date of your Entry: 11/18/15
+Subject Line of your entry: List Interface Notes
+***************** stack_indentation_checker    *****************
+Run your program and copy your screen output  below:
+Processing file: properlyIndented.txt
+1:
+2:void func1()
+3:{
+4:    int j,i=0;
+5:    if (i> 0)
+6:    {
+7:        j=i+1;
+8:    }
+9:}
+10:void func2()
+11:{
+12:    int j,i=0;
+13:    for(i=0; i < 10; i++)
+14:    {  // Next lines are blank
+15:   
+16:        
+17:        if (j ==i )
+18:           if (i % 5 == 0)
+19:              j=i;
+20:        j +=1;
+21:    }
+22:}
+***properlyIndented.txt is indented correctly***
+
+Processing file: properlyIndented2.txt
+1:
+2:
+3:
+4:class Test
+5:{
+6:    // This is a meaningless piece of code 
+7:    // Don't try to make any sense out of it.
+8:
+9:    String sWord;
+10:    int index=3;
+11:
+12:    public void test(int x, int y)
+13:    {
+14:        int x2=1, y2=2;
+15:
+16:        if (x == x2)
+17:        {
+18:            if (y==y2)
+19:            {
+20:                if (x == y2)
+21:                {
+22:                    if ( x2 == index)
+23:                    {
+24:                        sWord ="abc";
+25:                    }
+26:                }
+27:            }
+28:        }
+29:    }
+30:}
+***properlyIndented2.txt is indented correctly***
+
+Processing file: notIndentedProperly.txt
+1:
+2:void func1()
+3:{
+4:    int j,i=0;
+5:    if (i> 0)
+6:    {
+7:        j=i+1;
+8:      }
+BadIndentationException: Bad indentation at line 8
+
+Processing file: notIndentedProperly2.txt
+1:
+2:void func2()
+3:{
+4:    int j,i=0;
+5:    for(i=0; i < 10; i++)
+6:    {  // Next lines are blank
+7:   
+8:        
+9:        if (j ==i )
+10:           if (i % 5 == 0)
+11:              j=i;
+12:         j +=1; // This is the first line that is improperly indented
+BadIndentationException: Bad indentation at line 12
+
+Processing file: notIndentedProperly3.txt
+1:
+2:class Test
+3:{
+4:    // This is a meaningless piece of code 
+5:    // Don't try to make any sense out of it.
+6:
+7:    String sWord;
+8:    int index=3;
+9:
+10:    public void test(int x, int y)
+11:    {
+12:        int x2=1, y2=2;
+13:
+14:        if (x == x2)
+15:        {
+16:            if (y==y2)
+17:            {
+18:                if (x == y2)
+19:                {
+20:                    if ( x2 == index)
+21:                    {
+22:                        sWord ="abc";
+23:                    }
+24:                }
+25:            }
+26:         }
+BadIndentationException: Bad indentation at line 26
+
+***************** spell_checker    *****************
+Run your program and copy your screen output  below:
+======== Spell checking Russia.txt =========
+1: The nation's history began with that of the East Slavs, who emerged as a recognizable group in Europe between the 3rd and 8th centuries AD.
+slavs is not in the dictionary. Add to dictionary? (y/n)
+n
+europe is not in the dictionary. Add to dictionary? (y/n)
+n
+2:  Founded and ruled by a Varangian warrior elite and their descendants, the medieval state of Rus arose in the 9th century.
+varangian is not in the dictionary. Add to dictionary? (y/n)
+n
+rus is not in the dictionary. Add to dictionary? (y/n)
+n
+3:  In 988 it adopted Orthodox Christianity from the Byzantine Empire, beginning the synthesis of Byzantine and Slavic cultures
+christianity is not in the dictionary. Add to dictionary? (y/n)
+y
+byzantine is not in the dictionary. Add to dictionary? (y/n)
+n
+byzantine is not in the dictionary. Add to dictionary? (y/n)
+n
+slavic is not in the dictionary. Add to dictionary? (y/n)
+n
+4:  that defined Russian culture for the next millennium. Rus  ultimately disintegrated into a number of smaller states;
+russian is not in the dictionary. Add to dictionary? (y/n)
+n
+rus is not in the dictionary. Add to dictionary? (y/n)
+n
+5:  most of the Rus lands were overrun by the Mongol invasion and became tributaries of the nomadic Golden Horde.
+rus is not in the dictionary. Add to dictionary? (y/n)
+n
+6:  The Grand Duchy of Moscow gradually reunified the surrounding Russian principalities, achieved independence from the
+moscow is not in the dictionary. Add to dictionary? (y/n)
+n
+russian is not in the dictionary. Add to dictionary? (y/n)
+n
+7:  Golden Horde, and came to dominate the cultural and political legacy of Kievan Rus. By the 18th century, the nation had greatly
+kievan is not in the dictionary. Add to dictionary? (y/n)
+n
+rus is not in the dictionary. Add to dictionary? (y/n)
+n
+8:  expanded through conquest, annexation, and exploration to become the Russian Empire, which was the third largest empire in history,
+russian is not in the dictionary. Add to dictionary? (y/n)
+n
+9:  stretching from Poland in Europe to Alaska in North America.
+poland is not in the dictionary. Add to dictionary? (y/n)
+n
+europe is not in the dictionary. Add to dictionary? (y/n)
+n
+america is not in the dictionary. Add to dictionary? (y/n)
+n
+10: Following the Russian Revolution, the Russian Soviet Federative Socialist Republic became the largest and leading constituent of the
+russian is not in the dictionary. Add to dictionary? (y/n)
+n
+russian is not in the dictionary. Add to dictionary? (y/n)
+n
+federative is not in the dictionary. Add to dictionary? (y/n)
+n
+11: Soviet Union, the world's first constitutionally socialist state and a recognized superpower, which played a decisive role in the
+constitutionally is not in the dictionary. Add to dictionary? (y/n)
+n
+superpower is not in the dictionary. Add to dictionary? (y/n)
+n
+12: Allied victory in World War II. The Soviet era saw some of the most significant technological achievements of the 20th century,
+ii is not in the dictionary. Add to dictionary? (y/n)
+n
+13: including the world's first spacecraft, and the first astronaut. Following the dissolution of the Soviet Union in 1991, the Russian SFSR
+russian is not in the dictionary. Add to dictionary? (y/n)
+n
+sfsr is not in the dictionary. Add to dictionary? (y/n)
+n
+14: reconstituted itself as the Russian Federation and is recognized as the continuing legal personality of the Union state.
+reconstituted is not in the dictionary. Add to dictionary? (y/n)
+n
+russian is not in the dictionary. Add to dictionary? (y/n)
+n
+15: The Russian economy ranks as the eighth largest by nominal GDP and sixth largest by purchasing power parity. Russia's extensive mineral
+russian is not in the dictionary. Add to dictionary? (y/n)
+n
+gdp is not in the dictionary. Add to dictionary? (y/n)
+n
+russia is not in the dictionary. Add to dictionary? (y/n)
+n
+18:  Russia is a great power and a permanent member of the United Nations Security Council, a member of the G8, G20, the Council of Europe,
+russia is not in the dictionary. Add to dictionary? (y/n)
+n
+g8 is not in the dictionary. Add to dictionary? (y/n)
+n
+g20 is not in the dictionary. Add to dictionary? (y/n)
+n
+europe is not in the dictionary. Add to dictionary? (y/n)
+n
+19:  the Asia-Pacific Economic Cooperation, the Shanghai Cooperation Organisation, the Eurasian Economic Community, the Organisation for
+asia is not in the dictionary. Add to dictionary? (y/n)
+n
+organisation is not in the dictionary. Add to dictionary? (y/n)
+n
+eurasian is not in the dictionary. Add to dictionary? (y/n)
+n
+organisation is not in the dictionary. Add to dictionary? (y/n)
+n
+20:  Security and Cooperation in Europe (OSCE), and the World Trade Organisation (WTO) and the leading member of the Commonwealth of
+europe is not in the dictionary. Add to dictionary? (y/n)
+n
+organisation is not in the dictionary. Add to dictionary? (y/n)
+n
+*****Miss Spelled Words*****
+america 
+asia 
+byzantine 
+christianity 
+constitutionally 
+eurasian 
+europe 
+federative 
+g20 
+g8 
+gdp 
+ii 
+kievan 
+moscow 
+organisation 
+poland 
+reconstituted 
+rus 
+russia 
+russian 
+sfsr 
+slavic 
+slavs 
+superpower 
+varangian 
+======== Spell checking Ukraine.txt =========
+1:  The territory of Ukraine was first inhabited at least 44,000 years ago, with the country being a candidate site
+ukraine is not in the dictionary. Add to dictionary? (y/n)
+n
+2: for both the domestication of the horse  and for the origins of the Indo-European language family.
+indo is not in the dictionary. Add to dictionary? (y/n)
+n
+european is not in the dictionary. Add to dictionary? (y/n)
+n
+3: In the Middle Ages, the area became a key center of East Slavic culture, as epitomized by the powerful
+slavic is not in the dictionary. Add to dictionary? (y/n)
+n
+4: state of Kievan . Following its fragmentation in the 13th century, Ukraine was contested, ruled and divided by a variety of powers.
+kievan is not in the dictionary. Add to dictionary? (y/n)
+n
+ukraine is not in the dictionary. Add to dictionary? (y/n)
+n
+5: A Cossack republic emerged and prospered during the 17th and 18th centuries, but Ukraine remained otherwise divided until its consolidation
+ukraine is not in the dictionary. Add to dictionary? (y/n)
+n
+7: Ukraine has long been a global breadbasket due to its extensive, fertile farmlands. As of 2011, it was the world's third-largest
+ukraine is not in the dictionary. Add to dictionary? (y/n)
+n
+breadbasket is not in the dictionary. Add to dictionary? (y/n)
+n
+8: grain exporter with that year's harvest being much larger than average. Ukraine is one of ten most attractive agricultural land
+ukraine is not in the dictionary. Add to dictionary? (y/n)
+n
+11: Ukraine is a unitary state composed of 24 oblasts (provinces), one autonomous republic (Crimea) and two cities with special status:
+ukraine is not in the dictionary. Add to dictionary? (y/n)
+n
+12: Kiev, its capital and largest city and Sevastopol, which houses the Russian Black Sea Fleet under a leasing agreement.
+kiev is not in the dictionary. Add to dictionary? (y/n)
+n
+sevastopol is not in the dictionary. Add to dictionary? (y/n)
+n
+russian is not in the dictionary. Add to dictionary? (y/n)
+n
+13: Ukraine is a republic under a semi-presidential system with separate legislative, executive, and judicial branches.
+ukraine is not in the dictionary. Add to dictionary? (y/n)
+n
+14: Since the dissolution of the Soviet Union, Ukraine continues to maintain the second-largest military in Europe, after that of Russia,
+ukraine is not in the dictionary. Add to dictionary? (y/n)
+n
+europe is not in the dictionary. Add to dictionary? (y/n)
+n
+russia is not in the dictionary. Add to dictionary? (y/n)
+n
+15:  when reserves and paramilitary personnel are taken into account.
+paramilitary is not in the dictionary. Add to dictionary? (y/n)
+n
+16: The country is home to 44.6 million people, 77.8% of whom are ethnic Ukrainians, with sizable minorities of
+ukrainians is not in the dictionary. Add to dictionary? (y/n)
+n
+17: ethnic Russians (17%), Belarusians, Tatars and Romanians. Ukrainian is the official language of Ukraine; its alphabet is Cyrillic.
+russians is not in the dictionary. Add to dictionary? (y/n)
+n
+belarusians is not in the dictionary. Add to dictionary? (y/n)
+n
+tatars is not in the dictionary. Add to dictionary? (y/n)
+n
+romanians is not in the dictionary. Add to dictionary? (y/n)
+n
+ukrainian is not in the dictionary. Add to dictionary? (y/n)
+n
+ukraine is not in the dictionary. Add to dictionary? (y/n)
+n
+cyrillic is not in the dictionary. Add to dictionary? (y/n)
+n
+18: Russian is also widely spoken. The dominant religion in the country is Eastern Orthodox Christianity, which has strongly influenced
+russian is not in the dictionary. Add to dictionary? (y/n)
+n
+christianity is not in the dictionary. Add to dictionary? (y/n)
+n
+19: Ukrainian architecture, literature and music.
+ukrainian is not in the dictionary. Add to dictionary? (y/n)
+n
+20: The name Ukraine means "borderland". "The Ukraine" was once the usual form in English but since the Declaration of
+ukraine is not in the dictionary. Add to dictionary? (y/n)
+n
+borderland is not in the dictionary. Add to dictionary? (y/n)
+n
+ukraine is not in the dictionary. Add to dictionary? (y/n)
+n
+21: Independence of Ukraine, the English-speaking world has largely stopped using the definite article.
+ukraine is not in the dictionary. Add to dictionary? (y/n)
+n
+*****Miss Spelled Words*****
+belarusians 
+borderland 
+breadbasket 
+christianity 
+cyrillic 
+europe 
+european 
+indo 
+kiev 
+kievan 
+paramilitary 
+romanians 
+russia 
+russian 
+russians 
+sevastopol 
+slavic 
+tatars 
+ukraine 
+ukrainian 
+ukrainians 

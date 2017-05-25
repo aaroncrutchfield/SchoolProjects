@@ -1,0 +1,38 @@
+----------------------
+Game Application Notes
+----------------------
+
+Stories:
+
+(1) As a user, I can view a listing of games.
+Estimated Story Point: 3
+Acceptance Criteria: 
+- page to display a list of games taken from the database
+- games must be displayed in alphabetical order
+
+
+(2) As a user, I can add a new game.
+Estimated Story Point: 3
+Acceptance Criteria: 
+- a link on the listing page to take us to a form
+- a form to fill out game information
+    - all fields except gameID
+- when form is submitted, check validity of data,
+    : if acceptable, insert into database and redirect user to listing
+    : if not acceptable, return to form with error message and all fields filled in
+
+
+(3) As a user, I can modify an existing game record.
+Estimated Story Point: 3
+Acceptance Criteria: 
+- 
+
+
+(4) As a user, I can view details about a game.
+Estimated Story Point: 3
+
+(5) As a user, I can delete a game record.
+Estimated Story Point: 1
+
+(6) As a user, I can view a report of game data.
+Estimated Story Point: 13

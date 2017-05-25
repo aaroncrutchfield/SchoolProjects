@@ -1,0 +1,55 @@
+---------------------------------
+Provider Lookup Application Notes
+---------------------------------
+
+(1) As a user I can enter a zip code to view music instructors nearby
+    -text field in a form to input zip code
+        -submit button
+    -valid zip code is within 'a5_locations'.
+        -if a zip code is invalid, display an error message
+        -else display a report
+
+(2) As a user I can view a report of the selected location containing the following
+    -Report heading
+        -zip code
+        -location name
+        -state
+    -Report matching
+        -display the total number of association members within 25 miles
+    -Report table
+        -displays information about the nearby people, columns include
+            -name
+            -provider number
+            -subjects taught (comma seperated)
+            -the location of the person
+            -distance in miles from the user entered zip code
+        -data is sorted by closest distance
+            -secondary sorting is by provider number
+        
+
+Notes
+-use 69.0 miles for one degree of latitude or longitude. Distance reported must be 
+ accurate within 0.1 miles
+-The entire process of gathering the person table (with names, subjects, distance, etc.) 
+ can be performed entirely with on MySQL query. You don't have to do it that way, but 
+ however you do it you will need to use the distance formula:
+ a^2 + b^2 = c^2
+
+ distance = sqrt ((x1-x2)^2 + (y1-y2)^2)
+
+-keep in mind the multiplier of miles for one degree of latitude or longitude:
+ distance_miles = distance_deg * 69.0
+ 
+ distance_miles = 69.0 * (sqrt ((change in longitude)^2 + (change in latitude)^2))
+
+-Copper Harbor (49918) has no people within 25 miles
+-Dexter (48130) has 16 results
+-Kalamazoo (49004) has 13 results
+
+
+
+use post for zip
+location
+
+big query use in SELECT with alias
+use alias in order by

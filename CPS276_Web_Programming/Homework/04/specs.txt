@@ -1,0 +1,80 @@
+---------------------------------
+Chess Database Application Notes
+---------------------------------
+
+
+LISTING SCREEN
+
+(1) As a user I can view a table with data for all matches
+    -Table includes
+        -Date
+            -mm/dd/YYYY
+        -Player 1
+        -Player 2
+        -Result
+        -ECO code
+        -Link to Details screen in each row
+    -List data in order of Date played, newest on top
+    -No more than 250 records at a time
+        -use SQL limit clause
+
+
+
+LISTING FILTER
+
+(2) As a user, I can filter which matches I want to see
+    -HTML form directly above table contains the following inputs
+        -Date Range
+            -two text input fields, defaulting blank
+        -Name search
+            -one text field to search for player names
+            -perfoms a wildcard search of both player columns
+        -Result
+            -a dropdown selector allows selecting from the following
+                -Any
+                -Player 1
+                -Player 2
+                -Draw
+        -Submit button
+            -submits the form
+            -data must be filtered by all relevant filters
+                -build a query piece by piece. use conditional statements in PHP for each part of the filter
+
+
+DETAILS SCREEN
+
+(3) As a user I can view a separate screen with details of a given game
+    -Display the following info about a single chess game
+        -Event name
+        -Event Site
+        -Date
+        -Round Number
+        -Player 1 name and Elo (Elo is international ranking number)
+        -Player 2 name and Elo
+        -The result of the game
+        -The opening used and ECO (ECO is organizational system for openings)
+        -The moves
+    -A link at the top will take the user back to the Listing mode
+
+
+
+HINTS
+
+ID field is never displayed in the interface but is necessary to maintain association with a specific record.
+Pass this field when the user goes to the details screen using either a request parameter or hidden element
+
+
+Database Structure:
+id              INT, primary
+event           VARCHAR(32)
+site            VARCHAR(32)
+matchDate       DATE
+round           VARCHAR(5)
+player1         VARCHAR(48)
+player2         VARCHAR(48)
+result          ENUM(1,2,D) (D=draw)
+player1Elo      INT
+player2Elo      INT
+eco             VARCHAR(3)
+opening         VARCHAR(48)
+moves           TEXT
