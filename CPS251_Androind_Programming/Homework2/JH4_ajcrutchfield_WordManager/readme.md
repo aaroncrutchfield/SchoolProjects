@@ -8,13 +8,18 @@ Techniques Learned
 * File I/O
 * Handling long clicks
 
-![Alt text](screenshots/screen_1.png?raw=true "Menu clicks")
+
+Menu clicks
+![Alt text](screenshots/screen_1.png?raw=true)
 
 
-![Alt text](screenshots/screen_1.png?raw=true "Dialog prompt for opening file")
+Dialog prompt for opening file
+![Alt text](screenshots/screen_1.png?raw=true)
 
 
-![Alt text](screenshots/screen_1.png?raw=true "Dialog prompt for new file")
+Dialog prompt for new file
+![Alt text](screenshots/screen_1.png?raw=true)
 
 
-![Alt text](screenshots/screen_1.png?raw=true "Handling long clicks")
+Handling long clicks
+![Alt text](screenshots/screen_1.png?raw=true)
