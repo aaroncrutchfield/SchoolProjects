@@ -5,11 +5,14 @@
     android:layout_width="fill_parent"
     android:stretchColumns="0,1,2,3,4">
     <TableRow >
+
         <TextView
             android:id="@+id/display"
-            android:text=""
             android:layout_span="5"
-            android:autoText="false" />
+            android:autoText="false"
+            android:text=""
+            android:textSize="48sp"
+            android:textStyle="bold" />
     </TableRow>
 
     <TableRow >
